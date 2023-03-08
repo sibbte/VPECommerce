@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VPECommerce.Application.Interfaces\VPECommerce.Application.Interfaces.csproj" />
+    <ProjectReference Include="..\VPECommerce.Application\VPECommerce.Application.csproj" />
+    <ProjectReference Include="..\VPECommerce.Domain\VPECommerce.Domain.csproj" />
+    <ProjectReference Include="..\VPECommerce.Infrastructure\VPECommerce.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
